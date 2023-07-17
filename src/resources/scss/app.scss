@@ -1,0 +1,346 @@
+@import 'variables';
+a {
+    text-decoration: none;
+}
+
+.Choose-tool {
+    float: left;
+    display: inline-block;
+    margin-top: 8px;
+    position: relative;
+    cursor: pointer;
+}
+
+div#chooseTimeZone span#selectedTimeZone {
+    font-size: 15px;
+}
+
+.Choose-tool i {
+    display: inline-block;
+    content: "";
+    top: 2px;
+    transition: .2s;
+    width: 0;
+    height: 0;
+    vertical-align: middle;
+    margin-left: 4px;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #FFF;
+}
+
+#ddlTimeZone {
+    width: 320px;
+}
+
+.Choose-tool ul {
+    padding: 10px;
+    background-color: #212121;
+    position: absolute;
+    left: 0;
+    top: 44px;
+    z-index: 9999;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.6);
+    animation: popover .2s ease-in-out;
+    border-radius: 6px;
+    white-space: nowrap;
+}
+
+#ddlTimeZone li {
+    float: left;
+    width: 70px;
+    border-radius: 2px;
+    font-size: 12px;
+    list-style: none;
+    color: #fff !important;
+    font-weight: 600;
+}
+
+.Choose-tool ul li {
+    height: 26px;
+    line-height: 26px;
+    padding: 0 5px;
+}
+
+tr.Leaguestitle.fbHead {
+    background: $table_header;
+    color: #222;
+}
+
+#table_live .tds {
+    height: 50px;
+}
+
+#table_live tr>td {
+    font-size: 13px;
+}
+
+#table_live tr>td>p {
+    margin: 0 !important;
+}
+
+// .p9UpOdd1 .odds1,
+// .p10UpOdd1 .odds2,
+// .p11UpOdd1 .odds3,
+// .p9UpOdd2 .odds4,
+// .p10UpOdd2 .odds5,
+// .p11UpOdd2 .odds6 {
+//     background-color: #98db92;
+// }
+// .p9DownOdd1 .odds1,
+// .p10DownOdd1 .odds2,
+// .p11DownOdd1 .odds3,
+// .p9DownOdd2 .odds4,
+// .p10DownOdd2 .odds5,
+// .p11DownOdd2 .odds6 {
+//     background-color: #f9d2d2;
+// }
+#table_live span.down {
+    background-color: #f9d2d2;
+}
+
+#table_live .up {
+    background-color: #98db92;
+}
+
+// 6in1
+span#\36 in1 span,
+span#\36 in1 a,
+span#\36 in1 p,
+span#\36 in1 td {
+    font-size: 14px;
+}
+
+span#\36 in1 table {
+    background-color: #d0d0d0;
+}
+
+span#\36 in1 table .b1 {
+    background-color: #fff !important;
+}
+
+span#\36 in1 table .b1 td {
+    border: 1px solid #E6E6E6;
+}
+
+span#\36 in1 table .b1 td a {
+    color: #000 !important;
+    font-weight: 600;
+}
+
+span#\36 in1 .up {
+    background-color: #98db92;
+}
+
+span#\36 in1 .down {
+    background-color: #f9d2d2;
+}
+
+.head-6in1 {
+    display: flex;
+    background-color: #E6E6E6;
+    min-height: 1.625rem;
+    border-top-width: 1px;
+    cursor: pointer;
+    position: static;
+}
+
+.n-border {
+    border: inherit !important;
+}
+
+.bg-td {
+    background-color: $bg_secondary;
+}
+
+.c-league__header {
+    display: flex;
+    background-color: HSL(0, 0%, 90%);
+    min-height: 1.625rem;
+    border-top-width: 1px;
+    cursor: pointer;
+    position: static;
+    top: calc(var(--c-av-header-height) - 1px);
+    z-index: 4;
+}
+
+.c-league__btn-collapse {
+    flex: 0 0 auto;
+    width: var(--c-av-oddstable-collapse-w);
+    color: var(--c-av-league-info-text);
+    min-height: inherit;
+    border-right-width: 1px;
+}
+
+.c-league__btn-favorite {
+    flex: 0 0 auto;
+    // color: var(--c-av-league-favorite-color);
+    padding: 0 0.375rem;
+    font-size: 1.125rem;
+    cursor: pointer;
+}
+
+.c-league__name {
+    display: flex;
+    align-items: center;
+    padding: 0.25rem 0.125rem;
+    line-height: 1.125rem;
+}
+
+[class*="c-league__btn"] {
+    flex: 0 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.c-league__info {
+    flex: 1;
+    display: flex;
+    min-height: 1.625rem;
+    border-right: 1px solid #d3d3d3;
+}
+
+[class*="c-bettype-title"] {
+    display: flex;
+}
+
+.c-bettype-title {
+    flex: 0 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    border-color: rgba(0, 0, 0, 0.08);
+}
+
+[class*="c-bettype-title"] .c-bettype-col {
+    display: flex;
+    justify-content: center;
+    padding: 5.25px !important;
+    min-width: 0px !important;
+    text-align: center;
+}
+
+[class*="c-bettype-title"] .c-bettype-col span {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.c-match__bets {
+    display: flex;
+    position: relative;
+    width: 100%;
+    border-top-width: 1px;
+}
+
+.c-match__odds-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.c-odds-table--sport1.c-odds-table--hdp .c-match__odds,
+.c-odds-table--sport56 .c-match__odds {
+    width: 100%;
+}
+
+.c-match__odds-group .c-match__odds:not(.c-match__odds--more-lines),
+.c-match__odds-group .c-match__many-odds {
+    flex: 1 0 auto;
+}
+
+.c-match__odds {
+    display: flex;
+}
+
+.c-match__event {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    border-right: 1px solid #d3d3d3;
+}
+
+.c-match__team {
+    display: flex;
+    align-items: center;
+    min-height: 1.375rem;
+}
+
+.c-match__team .c-team {
+    flex: 1;
+}
+
+.c-team__info {
+    display: inline;
+}
+
+.c-odds-table .c-team__info .c-team-name {
+    font-weight: bold;
+}
+
+.c-match__team+.c-match__team {
+    margin-top: 0.25rem;
+}
+
+.c-bettype-col.c-has-goal {
+    flex: 0 0 auto;
+    min-width: 108px;
+    width: 5vw;
+    padding: 4px;
+}
+
+.c-match__odds .c-bettype-col:not(.c-has-goal) {
+    padding: 4px 0 0 0px;
+    width: 50px;
+}
+
+.c-odds-button+.c-odds-button {
+    margin-top: 5px;
+}
+
+.c-odds-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0.75rem;
+    min-height: 1.375rem;
+    background-color: var(--c-av-odds-heavy-bg);
+    border-color: rgba(0, 0, 0, 0.08);
+    border-radius: .1875rem;
+    position: relative;
+    cursor: pointer;
+    background-color: #d3d3d3;
+}
+
+// .c-odds-table:not(.c-odds-table--outright):not(.c-odds-table--fancy) .c-match:not(.c-is-even):not(.c-in-play) .c-match__bets .c-odds-button:not(:hover) {
+//     background-color: var(--c-av-odds-heavy-bg);
+// }
+.c-odds-button>.c-text-goal {
+    flex: 1;
+    font-weight: bold;
+}
+
+.c-bettype-col.c-has-goal .c-odds-button {
+    justify-content: flex-end !important;
+}
+
+.c-bettype-col .c-odds-button {
+    width: 100%;
+}
+
+.c-odds-table--sport1.c-odds-table--hdp .c-bettype-col:not(.c-has-goal),
+.c-odds-table--sport56 .c-bettype-col:not(.c-has-goal) {
+    min-width: 5.5vw;
+}
+
+.c-match__timer {
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0.5rem 0.25rem;
+    width: 86px;
+    border-right: 1px solid #d3d3d3;
+    text-align: center;
+}

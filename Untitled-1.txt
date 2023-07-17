@@ -1,0 +1,18 @@
+// const fdMRT = async() => {
+//     await fetch(`/ajax/soccerajax?type=${rtOdds}`)
+//         .then((response) => response.json())
+//         .then(async(data) => {
+//             data = data["data"];
+//             const table = document.getElementById("table_live");
+//             data.forEach((O) => {
+//                 const tr = table.querySelector(`#tr1_${O.MATCH_ID}`);
+//                 const td = tr.querySelector(`#tr1_${O.MATCH_ID}`);
+//                 if (trTitle != null) {
+//                     console.log(tr);
+//                 }
+//             });
+
+//         });
+// }
+
+// setInterval(fdMRT, 6000);

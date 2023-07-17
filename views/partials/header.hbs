@@ -1,0 +1,59 @@
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Logo</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="http://localhost:5001/schedule">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="http://localhost:5001/6in1">6in1</a>
+        </li>
+        <li class="nav-item">
+          <div class="Choose-tool " id="chooseTimeZone" style="width: 80px" onclick="showHideTimeZone(this)">
+            <span id="selectedTimeZone">&nbsp;</span><i></i>
+            <ul id="ddlTimeZone" style="display:none;">
+                <li onclick="changeTopTimeZone('')" id="timeZone_auto">Automatic</li>
+                <li onclick="changeTopTimeZone(-11)" id="timeZone_-11">GMT -11</li>
+                <li onclick="changeTopTimeZone(-10)" id="timeZone_-10">GMT -10</li>
+                <li onclick="changeTopTimeZone(-9)" id="timeZone_-9">GMT -9</li>
+                <li onclick="changeTopTimeZone(-8)" id="timeZone_-8">GMT -8</li>
+                <li onclick="changeTopTimeZone(-7)" id="timeZone_-7">GMT -7</li>
+                <li onclick="changeTopTimeZone(-6)" id="timeZone_-6">GMT -6</li>
+                <li onclick="changeTopTimeZone(-5)" id="timeZone_-5">GMT -5</li>
+                <li onclick="changeTopTimeZone(-4.5)" id="timeZone_-4.5">GMT -4.5</li>
+                <li onclick="changeTopTimeZone(-4)" id="timeZone_-4">GMT -4</li>
+                <li onclick="changeTopTimeZone(-3.5)" id="timeZone_-3.5">GMT -3.5</li>
+                <li onclick="changeTopTimeZone(-3)" id="timeZone_-3">GMT -3</li>
+                <li onclick="changeTopTimeZone(-2)" id="timeZone_-2">GMT -2</li>
+                <li onclick="changeTopTimeZone(-1)" id="timeZone_-1">GMT -1</li>
+                <li onclick="changeTopTimeZone(0)" id="timeZone_0">GMT 0</li>
+                <li onclick="changeTopTimeZone(1)" id="timeZone_1">GMT +1</li>
+                <li onclick="changeTopTimeZone(2)" id="timeZone_2">GMT +2</li>
+                <li onclick="changeTopTimeZone(3)" id="timeZone_3">GMT +3</li>
+                <li onclick="changeTopTimeZone(3.5)" id="timeZone_3.5">GMT +3.5</li>
+                <li onclick="changeTopTimeZone(4)" id="timeZone_4">GMT +4</li>
+                <li onclick="changeTopTimeZone(5)" id="timeZone_5">GMT +5</li>
+                <li onclick="changeTopTimeZone(5.5)" id="timeZone_5.5">GMT +5.5</li>
+                <li onclick="changeTopTimeZone(5.75)" id="timeZone_5.75">GMT +5.75</li>
+                <li onclick="changeTopTimeZone(6)" id="timeZone_6">GMT +6</li>
+                <li onclick="changeTopTimeZone(6.5)" id="timeZone_6.5">GMT +6.5</li>
+                <li onclick="changeTopTimeZone(7)" id="timeZone_7">GMT +7</li>
+                <li onclick="changeTopTimeZone(8)" id="timeZone_8">GMT +8</li>
+                <li onclick="changeTopTimeZone(9)" id="timeZone_9">GMT +9</li>
+                <li onclick="changeTopTimeZone(9.5)" id="timeZone_9.5">GMT +9.5</li>
+                <li onclick="changeTopTimeZone(10)" id="timeZone_10">GMT +10</li>
+                <li onclick="changeTopTimeZone(10.5)" id="timeZone_10.5">GMT +10.5</li>
+                <li onclick="changeTopTimeZone(11)" id="timeZone_11">GMT +11</li>
+                <li onclick="changeTopTimeZone(12)" id="timeZone_12">GMT +12</li>
+                <li onclick="changeTopTimeZone(13)" id="timeZone_13">GMT +13</li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
