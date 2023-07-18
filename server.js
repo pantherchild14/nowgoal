@@ -12,8 +12,11 @@ const { crawlOdds } = require("./crawler/oddsCrawl");
 const { getByTime } = require("./controllers/scheduleController");
 const path = require("path");
 
-
-connectDb();
+connectDb().then(() => {
+    app.listen(PORT, () => {
+        console.log(`Listening on port ${PORT}`)
+    })
+});
 const app = express();
 const port = process.env.PORT || 3000;
 
